@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "name": "@brr-dev/typescript-package-template",
-  "description": "A template repo for bundling TypeScript packages.",
+  "name": "@zenith-game/through-the-looking-glass",
+  "description": "A modern retelling of Alice in Wonderland built using the Zenith browser-based text adventure game platform.",
   "author": "Brandon Ramirez <brandon@brr.dev>",
   "license": "MIT",
   "main": "./dist/index.js",
@@ -16,17 +16,25 @@
     "prepare": "pnpm build"
   },
   "keywords": [
-    "template",
     "javascript",
-    "typescript"
+    "typescript",
+    "zenith",
+    "zenith-game",
+    "text-adventure",
+    "browser"
   ],
   "devDependencies": {
     "@types/jest": "^29.5.13",
+    "@types/react": "^18.3.8",
     "jest": "^29.7.0",
     "prettier": "^3.3.3",
     "ts-jest": "^29.2.5",
     "ts-node": "^10.9.2",
     "tsup": "^8.3.0",
     "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@zenith-game/core": "^0.9.7",
+    "react": "^18.3.1"
   }
 }

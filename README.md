@@ -1,3 +1,3 @@
-# @brr-dev/typescript-package-template
+# @zenith-game/through-the-looking-glass
 
-A template repo for bundling TypeScript packages.
+A modern retelling of Alice in Wonderland built using the Zenith browser-based text adventure game platform.
