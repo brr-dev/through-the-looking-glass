@@ -40,7 +40,7 @@ const Z00_BOOKS = {
                 'does not spring from disease of thought - from moods of mind ' +
                 'exalted at the expense of the general intellect.',
         },
-    },
+    } as Zenith.DefinitionMap<Zenith.BookDefinition>,
     madnessBipolar: {
         definition: {
             title: 'Madness: A Bipolar Life',
@@ -51,7 +51,7 @@ const Z00_BOOKS = {
                 'Reality is what you see. When what you see shifts, departing ' +
                 "from anyone else's reality, it's still reality to you.",
         },
-    },
+    } as Zenith.DefinitionMap<Zenith.BookDefinition>,
     furiouslyHappy: {
         definition: {
             title: 'Furiously Happy',
@@ -65,7 +65,7 @@ const Z00_BOOKS = {
                 'you see how your illness affected your family, your work, ' +
                 'everything left untouched while you struggled to survive.',
         },
-    },
+    } as Zenith.DefinitionMap<Zenith.BookDefinition>,
     theFirstStep: {
         definition: {
             title: 'The First Step',
@@ -78,7 +78,7 @@ const Z00_BOOKS = {
                 '\n\n' +
                 'Pain does not need to be seen to be felt.',
         },
-    },
+    } as Zenith.DefinitionMap<Zenith.BookDefinition>,
     keyToHappiness: {
         definition: {
             title: 'The Key to Happiness',
@@ -100,7 +100,7 @@ const Z00_BOOKS = {
                 },
             ],
         },
-    },
+    } as Zenith.DefinitionMap<Zenith.BookDefinition>,
     slaughterhouseFive: {
         definition: {
             title: 'Slaughterhouse Five',
@@ -110,7 +110,7 @@ const Z00_BOOKS = {
                 'warnings or explanations. It simply is. Take it moment by moment, and ' +
                 "you will find that we are all, as I've said before, bugs in amber.",
         },
-    },
+    } as Zenith.DefinitionMap<Zenith.BookDefinition>,
     dandelionWine: {
         definition: {
             title: 'Dandelion Wine',
@@ -121,7 +121,7 @@ const Z00_BOOKS = {
                 'cry quicker, remember longer and, as I say, get sadder younger than ' +
                 "anyone else in the world. I know, for I'm one of them.",
         },
-    },
+    } as Zenith.DefinitionMap<Zenith.BookDefinition>,
     aliceInWonderland: {
         definition: {
             title: 'Alice in Wonderland',
@@ -136,10 +136,15 @@ const Z00_BOOKS = {
                 '\n\n' +
                 '"Then," said the cat, "it really doesn\'t matter, does it?"',
         },
-    },
+    } as Zenith.DefinitionMap<Zenith.BookDefinition>,
 };
 
-const Z00 = {
+const Z00: {
+    ROOMS: Record<keyof typeof Z00_ROOMS, string>;
+    CONDITIONS: Record<keyof typeof Z00_CONDITIONS, string>;
+    KEYS: Record<keyof typeof Z00_KEYS, string>;
+    BOOKS: Record<keyof typeof Z00_BOOKS, Zenith.BookDefinition>;
+} = {
     ROOMS: Z00_ROOMS,
     CONDITIONS: Z00_CONDITIONS,
     KEYS: Z00_KEYS,
